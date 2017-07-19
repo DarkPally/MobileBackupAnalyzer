@@ -1,0 +1,9 @@
+F:\Project\vs_project\MobileBackup\MobileBackupTest\bin\Debug\MobileBackupTest.exe.config
+F:\Project\vs_project\MobileBackup\MobileBackupTest\bin\Debug\MobileBackupTest.exe
+F:\Project\vs_project\MobileBackup\MobileBackupTest\bin\Debug\MobileBackupTest.pdb
+F:\Project\vs_project\MobileBackup\MobileBackupTest\bin\Debug\MobileBackup.dll
+F:\Project\vs_project\MobileBackup\MobileBackupTest\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\Project\vs_project\MobileBackup\MobileBackupTest\bin\Debug\MobileBackup.pdb
+F:\Project\vs_project\MobileBackup\MobileBackupTest\obj\Debug\MobileBackupTest.csprojResolveAssemblyReference.cache
+F:\Project\vs_project\MobileBackup\MobileBackupTest\obj\Debug\MobileBackupTest.exe
+F:\Project\vs_project\MobileBackup\MobileBackupTest\obj\Debug\MobileBackupTest.pdb

@@ -1,0 +1,7 @@
+D:\project\MobileBackup\MobileBackup\MobileBackup\bin\Debug\MobileBackup.dll.config
+D:\project\MobileBackup\MobileBackup\MobileBackup\bin\Debug\MobileBackup.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup\bin\Debug\MobileBackup.pdb
+D:\project\MobileBackup\MobileBackup\MobileBackup\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup\obj\Debug\MobileBackup.csprojResolveAssemblyReference.cache
+D:\project\MobileBackup\MobileBackup\MobileBackup\obj\Debug\MobileBackup.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup\obj\Debug\MobileBackup.pdb

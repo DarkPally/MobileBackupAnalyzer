@@ -1,0 +1,15 @@
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.Demo.WinForm.exe.config
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.Demo.WinForm.exe
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.Demo.WinForm.pdb
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\AndroidMUBackup.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MUDecompress.dll
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.pdb
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.dll.config
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.csprojResolveAssemblyReference.cache
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.Form1.resources
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.Properties.Resources.resources
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.csproj.GenerateResource.Cache
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.exe
+D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.pdb
