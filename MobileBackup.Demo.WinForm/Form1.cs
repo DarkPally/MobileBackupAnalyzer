@@ -103,7 +103,7 @@ namespace MobileBackup.Demo.WinForm
         void OnMUCompletedAsyn(object sender, AndroidMUBackup.TaskCompletedEventArgs e)
         {
             string result;
-            if (e.Cancelled) 
+            if (e.Cancelled)
             {
                 result = "任务被取消";
             }

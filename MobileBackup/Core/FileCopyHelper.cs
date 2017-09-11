@@ -20,7 +20,7 @@ namespace MobileBackup
                 System.IO.Directory.CreateDirectory(dPath);
             System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(sPath);
             System.IO.DirectoryInfo[] dirs = dir.GetDirectories();
-            CopyFile(dir, dPath);
+            CopyDirectoryFiles(dir, dPath);
             if (dirs.Length > 0)
             {
                 foreach (System.IO.DirectoryInfo temDirectoryInfo in dirs)
@@ -31,7 +31,7 @@ namespace MobileBackup
                     {
                         System.IO.Directory.CreateDirectory(destDirectoryFullName);
                     }
-                    CopyFile(temDirectoryInfo, destDirectoryFullName);
+                    CopyDirectoryFiles(temDirectoryInfo, destDirectoryFullName);
                     CopyDirectory(sourceDirectoryFullName, destDirectoryFullName);
                 }
             }
@@ -43,7 +43,7 @@ namespace MobileBackup
         /// </summary>
         /// <param >源路径</param>
         /// <param >目的路径</param>
-        static public void CopyFile(System.IO.DirectoryInfo path, string desPath)
+        static public void CopyDirectoryFiles(System.IO.DirectoryInfo path, string desPath)
         {
             string sourcePath = path.FullName;
             System.IO.FileInfo[] files = path.GetFiles();
@@ -53,6 +53,14 @@ namespace MobileBackup
                 string destFileFullName = sourceFileFullName.Replace(sourcePath, desPath);
                 file.CopyTo(destFileFullName, true);
             }
+        }
+
+        static public void CopyFile(string srcFilePath, string desFileDirectoryPath)
+        {            
+            var file = new System.IO.FileInfo(srcFilePath);
+            string sourceFileFullName = file.FullName;
+            string destFileFullName = sourceFileFullName.Replace(file.DirectoryName, desFileDirectoryPath);
+            file.CopyTo(destFileFullName, true);
         }
     }
 }

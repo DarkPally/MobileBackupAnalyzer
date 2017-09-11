@@ -16,14 +16,14 @@ namespace MobileBackup.MeiZu
             
         }
 
-        protected override bool appCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
+        protected override bool appDataCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
         {
             filePath = appSrcPath + option.PackageName_Android + ".zip";
             return Files.Contains(filePath);
         }
-        protected override void appProcessSingle(string tarPath)
+        protected override void appDataProcessSingle(string tarPath)
         {
-            UnZipHelper.unZipFile(tarPath, appDesPath);     
+            UnZipHelper.unZipFile(tarPath, appDataDesPath);     
         } 
 
         public BackupAnalyzerMeiZu(string config,string source,string destination)
@@ -32,7 +32,7 @@ namespace MobileBackup.MeiZu
             SourcePath = source;
             DestinationPath = destination;
             appSrcPathSub = "\\App\\";
-            appDesPathSub="\\data\\data\\";
+            appDataDesPathSub="\\data\\data\\";
         }
     }
 }

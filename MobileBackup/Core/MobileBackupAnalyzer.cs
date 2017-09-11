@@ -13,6 +13,7 @@ namespace MobileBackup
 {
     public class MobileBackupAnalyzer
     {
+        //
         Task mTask;
         CancellationTokenSource tokenSource;
         CancellationToken token;
@@ -56,12 +57,13 @@ namespace MobileBackup
         int totalNumber;
         protected string appSrcPathSub { get; set; }
 
-        protected string appDesPathSub { get; set; }
+        protected string appDataDesPathSub { get; set; }
 
         protected string appSrcPath;
 
-        protected string appDesPath;
+        protected string appDataDesPath;
 
+        protected string appApkDesDirectoryPath;
         protected void onFindAppFile(ConfigeAppOption option, int currentNum)
         {
             onTaskStateChanged(this, new TaskStateChangedEventArgs()
@@ -74,12 +76,21 @@ namespace MobileBackup
                    });
         }
 
-        protected virtual bool appCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
+        protected virtual bool appApkCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
+        {
+            filePath = appSrcPath + option.PackageName_Android+".apk";
+            return Files.Contains(filePath);
+        }
+        protected virtual void appApkProcessSingle(string apkPath)
+        {
+            FileCopyHelper.CopyFile(apkPath, appApkDesDirectoryPath);
+        }
+        protected virtual bool appDataCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
         {
             filePath = appSrcPath + option.PackageName_Android;
             return false;
         }
-        protected virtual void appProcessSingle(string tarPath)
+        protected virtual void appDataProcessSingle(string tarPath)
         {
 
         }
@@ -144,9 +155,15 @@ namespace MobileBackup
         void processApp()
         {
             appSrcPath = SourcePath + appSrcPathSub;
-            appDesPath = DestinationPath + appDesPathSub;
+            appDataDesPath = DestinationPath + appDataDesPathSub;
+            appApkDesDirectoryPath = DestinationPath + "\\data\\app";
             var Files = Directory.GetFiles(appSrcPath);
 
+            if (!Directory.Exists(appApkDesDirectoryPath))
+            {
+                //在指定的路径创建文件夹
+                Directory.CreateDirectory(appApkDesDirectoryPath);
+            }
             int count = 0;
             foreach (var option in AppOptions)
             {
@@ -155,8 +172,22 @@ namespace MobileBackup
                     throw new OperationCanceledException(token);
                 }
                 ++count;
-                string tarPath;
-                if (appCheckExist(option,Files, out tarPath))
+                string filePath;
+
+                if (appApkCheckExist(option, Files, out filePath))
+                {
+                    onTaskStateChanged(this, new TaskStateChangedEventArgs()
+                    {
+                        TaskState = TaskState.AppProc,
+                        Description = "已找到应用程序备份：" + option.PackageName_Android + " 正在复制...",
+                        TaskID = option.ID,
+                        CurrentNumber = count,
+                        TotalNumber = totalNumber,
+                    });
+                    appApkProcessSingle(filePath);
+                }
+
+                if (appDataCheckExist(option, Files, out filePath))
                 {
                     onTaskStateChanged(this, new TaskStateChangedEventArgs()
                     {
@@ -166,11 +197,7 @@ namespace MobileBackup
                         CurrentNumber = count,
                         TotalNumber = totalNumber,
                     });
-                    appProcessSingle(tarPath);
-                }
-                else
-                {
-                    continue;
+                    appDataProcessSingle(filePath);
                 }
             }
         }

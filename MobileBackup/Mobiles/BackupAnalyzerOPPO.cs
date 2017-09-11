@@ -40,14 +40,14 @@ namespace MobileBackup.OPPO
 
         }
 
-        protected override bool appCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
+        protected override bool appDataCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
         {
             filePath = appSrcPath + option.PackageName_Android + ".tar";
             return Files.Contains(filePath);
         }
-        protected override void appProcessSingle(string tarPath)
+        protected override void appDataProcessSingle(string tarPath)
         {
-            UnTarHelper.unTarFile(tarPath, appDesPath);
+            UnTarHelper.unTarFile(tarPath, appDataDesPath);
         } 
 
         public BackupAnalyzerOPPO(string config, string source, string destination)
@@ -56,7 +56,7 @@ namespace MobileBackup.OPPO
             SourcePath = source;
             DestinationPath = destination;
             appSrcPathSub = "\\App\\";
-            appDesPathSub = "\\";
+            appDataDesPathSub = "\\";
         }
     }
 }
