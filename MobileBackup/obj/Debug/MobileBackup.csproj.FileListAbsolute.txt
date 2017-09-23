@@ -5,3 +5,10 @@ D:\project\MobileBackup\MobileBackup\MobileBackup\bin\Debug\ICSharpCode.SharpZip
 D:\project\MobileBackup\MobileBackup\MobileBackup\obj\Debug\MobileBackup.csprojResolveAssemblyReference.cache
 D:\project\MobileBackup\MobileBackup\MobileBackup\obj\Debug\MobileBackup.dll
 D:\project\MobileBackup\MobileBackup\MobileBackup\obj\Debug\MobileBackup.pdb
+E:\MobileBackupAnalyzer-master\MobileBackup\bin\Debug\MobileBackup.dll.config
+E:\MobileBackupAnalyzer-master\MobileBackup\bin\Debug\MobileBackup.dll
+E:\MobileBackupAnalyzer-master\MobileBackup\bin\Debug\MobileBackup.pdb
+E:\MobileBackupAnalyzer-master\MobileBackup\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\MobileBackupAnalyzer-master\MobileBackup\obj\Debug\MobileBackup.csprojResolveAssemblyReference.cache
+E:\MobileBackupAnalyzer-master\MobileBackup\obj\Debug\MobileBackup.dll
+E:\MobileBackupAnalyzer-master\MobileBackup\obj\Debug\MobileBackup.pdb

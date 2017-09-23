@@ -34,6 +34,8 @@ namespace MobileBackup.Configs
 
         [XmlElement("BrowserOption")]
         public List<ConfigeAppOption> BrowserOptions { get; set; }
+        [XmlElement("BusinessOption")]
+        public List<ConfigeAppOption> BusinessOptions { get; set; }
 
         [XmlElement("CloudOption")]
         public List<ConfigeAppOption> CloudOptions { get; set; }

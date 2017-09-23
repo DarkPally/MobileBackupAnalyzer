@@ -46,7 +46,8 @@ namespace MobileBackup
             AppOptions.AddRange(myConfig.MailOptions);
             AppOptions.AddRange(myConfig.LocationOptions);
             AppOptions.AddRange(myConfig.IMOptions);
-
+            AppOptions.AddRange(myConfig.BusinessOptions);
+            
             CollectOptions = new List<ConfigOptionBase>();
             CollectOptions.AddRange(myConfig.CollectOptions);
             CollectOptions.AddRange(myConfig.CollectExtendOptions);

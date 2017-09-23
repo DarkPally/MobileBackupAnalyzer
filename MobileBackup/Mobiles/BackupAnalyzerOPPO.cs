@@ -43,11 +43,32 @@ namespace MobileBackup.OPPO
         protected override bool appDataCheckExist(ConfigeAppOption option, string[] Files, out string filePath)
         {
             filePath = appSrcPath + option.PackageName_Android + ".tar";
-            return Files.Contains(filePath);
+            if (Files.Contains(filePath))
+            {
+                appDataDesPathSub = "\\";
+                appDataDesPath = DestinationPath + appDataDesPathSub;
+                return true;
+            }
+            filePath = appSrcPath + option.PackageName_Android + ".zip";
+
+            if (Files.Contains(filePath))
+            {
+                appDataDesPathSub = "\\data\\data\\";
+                appDataDesPath = DestinationPath + appDataDesPathSub;
+                return true;
+            }
+            return false;
         }
         protected override void appDataProcessSingle(string tarPath)
         {
-            UnTarHelper.unTarFile(tarPath, appDataDesPath);
+            if (tarPath.Substring(tarPath.Length-3, 3)=="tar")
+            {
+                UnTarHelper.unTarFile(tarPath, appDataDesPath);
+            }
+            else
+            {
+                UnZipHelper.unZipFile(tarPath, appDataDesPath);
+            }
         } 
 
         public BackupAnalyzerOPPO(string config, string source, string destination)

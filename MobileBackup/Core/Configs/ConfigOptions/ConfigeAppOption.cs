@@ -21,7 +21,7 @@ namespace MobileBackup.Configs
         {
             get
             {
-                var temp=Description_Android.Split('/');
+                var temp=Description_Android.Split(';')[0].Split('/');
                 return temp[0];
             }
         }

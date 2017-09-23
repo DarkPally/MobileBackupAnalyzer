@@ -13,3 +13,17 @@ D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileB
 D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.csproj.GenerateResource.Cache
 D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.exe
 D:\project\MobileBackup\MobileBackup\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.pdb
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.Demo.WinForm.exe.config
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.Demo.WinForm.exe
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.Demo.WinForm.pdb
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\AndroidMUBackup.dll
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.dll
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\zlib.net.dll
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\bin\Debug\MobileBackup.pdb
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.csprojResolveAssemblyReference.cache
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.Form1.resources
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.Properties.Resources.resources
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.csproj.GenerateResource.Cache
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.exe
+E:\MobileBackupAnalyzer-master\MobileBackup.Demo.WinForm\obj\Debug\MobileBackup.Demo.WinForm.pdb
